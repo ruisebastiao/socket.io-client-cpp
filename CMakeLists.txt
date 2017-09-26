@@ -12,7 +12,7 @@ include_directories(src/*.h)
 add_library(${PROJECT_NAME} SHARED ${SOURCES})
 
 # Install library
-install(TARGETS ${PROJECT_NAME} DESTINATION lib/})
+install(TARGETS ${PROJECT_NAME} DESTINATION lib/)
 
 # Install library headers
 file(GLOB HEADERS src/*.h)
