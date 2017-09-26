@@ -16,4 +16,4 @@ install(TARGETS ${PROJECT_NAME} DESTINATION lib/${PROJECT_NAME})
 
 # Install library headers
 file(GLOB HEADERS src/*.h)
-install(FILES ${HEADERS} DESTINATION include/${PROJECT_NAME})
+install(FILES ${HEADERS} DESTINATION include/)
