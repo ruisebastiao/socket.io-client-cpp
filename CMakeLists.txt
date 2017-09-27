@@ -2,12 +2,13 @@ cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
 
 project(sioclient)
 
-# Find source files
-file(GLOB SOURCES src/*.cpp)
+
+aux_source_directory(src/ ALL_SRC)
+aux_source_directory(src/internal ALL_SRC)
+
 
 # Include header files
 include_directories(src/*.h)
-
 
 set(BOOST_VER "1.55.0" CACHE STRING "boost version" )
 
