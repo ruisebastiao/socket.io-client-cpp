@@ -2,9 +2,6 @@ cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
 
 project(sioclient)
 
-set_property(TARGET sioclient PROPERTY CXX_STANDARD 11)
-set_property(TARGET sioclient PROPERTY CXX_STANDARD_REQUIRED ON)
-
 # Find source files
 file(GLOB SOURCES src/*.cpp)
 
@@ -13,6 +10,9 @@ include_directories(src/*.h)
 
 # Create shared library
 add_library(${PROJECT_NAME} SHARED ${SOURCES})
+
+set_property(TARGET sioclient PROPERTY CXX_STANDARD 11)
+set_property(TARGET sioclient PROPERTY CXX_STANDARD_REQUIRED ON)
 
 # Install library
 install(TARGETS ${PROJECT_NAME} DESTINATION lib/)
