@@ -18,7 +18,7 @@ find_package(Boost ${BOOST_VER} REQUIRED COMPONENTS system date_time random)
 
 
 # Create shared library
-add_library(${PROJECT_NAME} SHARED ${SOURCES})
+add_library(${PROJECT_NAME} SHARED  ${ALL_SRC})
 
 set_property(TARGET sioclient PROPERTY CXX_STANDARD 11)
 set_property(TARGET sioclient PROPERTY CXX_STANDARD_REQUIRED ON)
