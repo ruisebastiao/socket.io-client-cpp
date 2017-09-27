@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
 
 project(sioclient)
 
+set_property(TARGET sioclient PROPERTY CXX_STANDARD 11)
+set_property(TARGET sioclient PROPERTY CXX_STANDARD_REQUIRED ON)
+
 # Find source files
 file(GLOB SOURCES src/*.cpp)
 
